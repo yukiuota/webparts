@@ -1,0 +1,11 @@
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-list {
+    display: flex;
+    gap: 0 20px;
+}
