@@ -1,0 +1,13 @@
+.text {
+    padding-left: 14px;
+    position: relative;
+
+    &::before {
+        content: "・";
+        font-size: 14px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
