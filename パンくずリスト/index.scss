@@ -1,0 +1,22 @@
+//breadCrumb
+#breadCrumb {
+    margin-top: 10px;
+
+    li {
+        font-size: 12px;
+        display: inline;
+    }
+
+    a,
+    span {
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 0.064em;
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
