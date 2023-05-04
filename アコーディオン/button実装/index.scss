@@ -1,0 +1,22 @@
+.accordion-title {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+
+.accordion-content {
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition-duration: .3s;
+
+    &.is-open {
+        height: auto;
+        line-height: normal;
+        opacity: 1;
+    }
+}

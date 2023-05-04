@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- accordion -->
+    <section class="accordion">
+        <button class="accordion-ttl js-accordion-title">Accordion Title 1</button>
+        <div class="accordion-content">Accordion Content 1</div>
+        <button class="accordion-ttl js-accordion-title">Accordion Title 2</button>
+        <div class="accordion-content">Accordion Content 2</div>
+        <button class="accordion-ttl js-accordion-title">Accordion Title 3</button>
+        <div class="accordion-content">Accordion Content 3</div>
+    </section>
+    <!-- /accordion -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const title = document.querySelectorAll('.js-accordion-title');
+            for (let i = 0; i < title.length; i++) {
+                let titleEach = title[i];
+                let content = titleEach.nextElementSibling;
+                titleEach.addEventListener('click', () => {
+                    content.classList.toggle('is-open');
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
