@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <title>CONTACTページ</title>
+</head>
+
+<body>
+
+    <form method="post" action="mail.php">
+        select
+        <select name="ご用件">
+            <option value="">選択してください</option>
+            <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+            <option value="リンクについて">リンクについて</option>
+        </select>
+        お名前<input id="name" size="20" type="text" name="お名前" />
+        <p class="err-msg-name"></p>
+        電話番号（半角）<input id="phone" size="30" type="text" name="電話番号" />
+        <p class="err-msg-phone"></p>
+        Mail（半角）<input id="email" size="30" type="text" name="" />
+
+        <input id="confirm-email" size="30" type="text" name="" />
+        <p class="err-msg-mail err-msg-confirm-mail"></p>
+
+        性別<input type="radio" name="性別" value="男" /> 男　
+        <input type="radio" name="性別" value="女" /> 女
+
+        サイトを知ったきっかけ
+        <input name="サイトを知ったきっかけ[]" type="checkbox" value="友人・知人" /> 友人・知人　
+        <input name="サイトを知ったきっかけ[]" type="checkbox" value="検索エンジン" /> 検索エンジン
+
+        お問い合わせ内容<textarea name="お問い合わせ内容" cols="50" rows="5"></textarea>
+
+        <input class="submit" type="submit" value="　 確認 　" />
+        <input type="reset" value="リセット" />
+
+    </form>
+
+</body>
+
+</html>
